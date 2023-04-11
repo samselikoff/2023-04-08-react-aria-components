@@ -36,6 +36,7 @@ function Toggle({ children }: { children: ReactNode }) {
           className="inline-flex items-center text-white space-x-4"
         >
           <motion.div
+            layout
             // variants={{
             //   idle: {
             //     justifyContent: "flex-start",
@@ -49,7 +50,7 @@ function Toggle({ children }: { children: ReactNode }) {
             // }}
             className={`${
               isSelected ? "justify-end" : "justify-start"
-            } flex w-10 h-6 rounded-full transition-colors items-center border-2 border-transparent bg-zinc-600 group-data-[selected]:bg-green-500 group-data-[focus-visible]:ring-2 ring-offset-2 ring-offset-zinc-900`}
+            } flex w-10 h-6 rounded-full items-center border-2 border-transparent bg-zinc-600 group-data-[selected]:bg-green-500 group-data-[focus-visible]:ring-2 ring-offset-2 ring-offset-zinc-900`}
           >
             <motion.div layout transition={{ duration: 1, ease: "linear" }}>
               <motion.div
@@ -64,7 +65,7 @@ function Toggle({ children }: { children: ReactNode }) {
                 // layout="position"
                 transition={{ duration: 1, ease: "linear" }}
                 // layout="position"
-                className={`bg-white shadow h-5 rounded-full origin-right`}
+                className={`bg-white shadow h-5 rounded-full`}
               />
             </motion.div>
           </motion.div>
