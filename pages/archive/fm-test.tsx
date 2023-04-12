@@ -33,10 +33,9 @@ function Toggle({ children }: { children: ReactNode }) {
           //     justifyContent: "flex-end",
           //   },
           // }}
-          className="inline-flex items-center text-white space-x-4"
+          className="inline-flex items-center text-white space-x-4 isolate"
         >
-          <motion.div
-            layout
+          <div
             // variants={{
             //   idle: {
             //     justifyContent: "flex-start",
@@ -50,9 +49,13 @@ function Toggle({ children }: { children: ReactNode }) {
             // }}
             className={`${
               isSelected ? "justify-end" : "justify-start"
-            } flex w-10 h-6 rounded-full items-center border-2 border-transparent bg-zinc-600 group-data-[selected]:bg-green-500 group-data-[focus-visible]:ring-2 ring-offset-2 ring-offset-zinc-900`}
+            } flex w-10 h-6 rounded-full items-center border-2 border-transparent bg-zinc-600 group-data-[selected]:bg-green-500 group-data-[focus-visible]:ring-2 ring-offset-2 ring-offset-zinc-900 `}
           >
-            <motion.div layout transition={{ duration: 1, ease: "linear" }}>
+            <motion.div
+              layout
+              transition={{ duration: 1, ease: "linear" }}
+              className="mix-blend-plus-lighter"
+            >
               <motion.div
                 // initial={false}
                 animate={{
@@ -68,7 +71,7 @@ function Toggle({ children }: { children: ReactNode }) {
                 className={`bg-white shadow h-5 rounded-full`}
               />
             </motion.div>
-          </motion.div>
+          </div>
           <span>{children}</span>
         </div>
       )}

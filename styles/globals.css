@@ -5,5 +5,5 @@
 html,
 body,
 #__next {
-  @apply h-full bg-zinc-900;
+  @apply h-full bg-zinc-900 text-zinc-100;
 }
