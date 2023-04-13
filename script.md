@@ -16,6 +16,32 @@ So this is what we're gonna build today, and I'm excited to show you just how ea
 
 ## 🟢 Step
 
+- Switch
+- Toggle
+- bg-green and ml-4 w/transition
+- focus-visible
+
+First thing bring in Switch. Screen does
+
+```tsx
+import { Switch } from "react-aria-components";
+
+export default function Page() {
+  return (
+    <div className="flex flex-col items-center px-6 justify-center min-h-full text-center">
+      <div className="flex flex-col w-72">
+        <Switch className="inline-flex items-center">
+          <div className="w-9 h-6 bg-zinc-600 mr-4 rounded-full border-2 border-transparent">
+            <div className="w-5 h-5 bg-white rounded-full"></div>
+          </div>
+          <span>Airplane Mode</span>
+        </Switch>
+      </div>
+    </div>
+  );
+}
+```
+
 ## 🟢 Step
 
 and if you've watched my channel in the past you know how much
