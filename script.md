@@ -1,6 +1,6 @@
 # Script
 
-React Aria just released a new set of headless components. They're currently in Alpha but we're going to take a look at one of them today to build a custom animated Toggle component styled with Tailwind.
+React Aria just released a new set of headless components. They're currently in Alpha but we're going to take a look at one of them today to build a custom animated Switch component styled with Tailwind.
 
 Now if you're eager to see the final code, I've included a link in the description to a code snippet over on buildui.com. So feel free to grab it, drop it in your app, and customize it to your heart's content.
 
@@ -18,7 +18,7 @@ So this is what we're gonna build today, and I'm excited to show you just how ea
 
 - Switch
 - Toggle
-- bg-green and ml-4 w/transition
+- bg-green and ml-4 w/transition, duration-300
 - focus-visible
 
 ## 🟢 Step
