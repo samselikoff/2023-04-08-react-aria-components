@@ -21,6 +21,14 @@ So this is what we're gonna build today, and I'm excited to show you just how ea
 - bg-green and ml-4 w/transition
 - focus-visible
 
+## 🟢 Step
+
+So there ya have, hope you enjoyed that first look at React Aria Components. You can find a link to the code on Build UI in the description, and speaking of Build UI
+
+---
+
+## 🟢 Step
+
 First thing bring in Switch. Screen does
 
 ```tsx
