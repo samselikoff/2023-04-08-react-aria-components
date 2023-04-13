@@ -21,7 +21,11 @@ function Toggle({
   ...props
 }: { children: ReactNode } & ComponentProps<typeof Switch>) {
   return (
-    <Switch {...props} className="inline-flex items-center space-x-4 group">
+    <Switch
+      {...props}
+      className="inline-flex items-center space-x-4 group touch-none"
+      style={{ WebkitTapHighlightColor: "transparent" }}
+    >
       <div className="flex w-9 h-6 rounded-full items-center border-2 border-transparent bg-zinc-600 group-data-[selected]:bg-green-500 transition group-data-[focus-visible]:ring-2 ring-offset-2 ring-offset-zinc-900 duration-200 cursor-pointer">
         <div className="bg-white shadow w-5 h-5 rounded-full origin-right transition-all group-data-[pressed]:w-6 group-data-[selected]:ml-3 group-data-[selected]:group-data-[pressed]:ml-2 duration-300" />
       </div>
